@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,15 @@ import { Component, signal } from '@angular/core';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('IntroAngular');
+  title = 'saul';
+
+  duplicaNumero(n1:number):number {
+    return n1*2
+  }
+
+  pelicula = {
+    titulo:'Spider-Man',
+    fecha_lanzamiento:new Date(),
+    precio:999,
+  }
 }
