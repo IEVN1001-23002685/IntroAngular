@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form action="">
+
+                <div class="pt-4 form-group">
+                    <label for="num1">
+                        Numero 1
+                    </label>
+                    <input [(ngModel)]="num1" type="text" name="num1" class="form-control"
+                        placeholder="Ingresa un numero">
+                </div>
+                <div class="pt-4 form-group">
+                    <label for="num2">
+                        Numero 2
+                    </label>
+                    <input [(ngModel)]="num2" type="text" name="num2" class="form-control"
+                        placeholder="Ingresa un numero">
+                </div>
+                <br>
+                <label>
+                    <input type="radio" name="operacion" (change)="multiplicar()">
+                    Multiplicacion
+                </label>
+                <label>
+                    <input type="radio" name="operacion" (change)="dividir()">
+                    Division
+                </label>
+                <label>
+                    <input type="radio" name="operacion" (change)="sumar()">
+                    Suma
+                </label>
+                <label>
+                    <input type="radio" name="operacion" (change)="restar()">
+                    Resta
+                </label>
+
+            </form>
+        </div>
+
+        <div class="col-6">
+            <h2>
+                Resultado {{ resultado }}
+            </h2>
+        </div>
+    </div>
+</div>
