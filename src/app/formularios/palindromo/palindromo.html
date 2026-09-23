@@ -1,0 +1,34 @@
+<section>
+    <form>
+
+        <fieldset>
+            <legend>
+                leerFrase frase
+            </legend>
+        </fieldset>
+
+        <fieldset>
+            <label>
+                <input type="text" [(ngModel)]="frase" name="frase">
+                Frase
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <button type="button" (click)="leerFrase()">
+                leerFrase frase
+            </button>
+        </fieldset>
+
+        <fieldset>
+            <p>Numero de vocales: {{ numeroVocales }}</p>
+            <p>Vocales: {{ vocales }}</p>
+
+            <p>Numero de consonantes: {{ numeroConsonantes }}</p>
+            <p>Consonantes: {{ consonantes }}</p>
+
+            <p>{{ resultado }}</p>
+        </fieldset>
+
+    </form>
+</section>

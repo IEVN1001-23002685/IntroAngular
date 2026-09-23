@@ -1,0 +1,67 @@
+<section class="container">
+    <header>
+        <h1>Area de Figuras</h1>
+    </header>
+    <form class="row">
+        <div class="col-1">
+            <label>
+                <input type="radio" name="figura" value="triangulo" [(ngModel)]="figura">
+                Triangulo
+            </label>
+            <label>
+                Base
+                <input type="number" name="base" [(ngModel)]="base">
+            </label>
+            <label>
+                Altura
+                <input type="number" name="altura" [(ngModel)]="altura">
+            </label>
+        </div>
+        <div class="col-2">
+            <label>
+                <input type="radio" name="figura" value="circulo" [(ngModel)]="figura">
+                Circulo
+            </label>
+            <label>
+                Radio
+                <input type="number" name="radio" [(ngModel)]="radio">
+            </label>
+        </div>
+        <div class="col-3">
+            <label>
+                <input type="radio" name="figura" value="rectangulo" [(ngModel)]="figura">
+                Rectangulo
+            </label>
+            <label>
+                Base
+                <input type="number" name="baseRectangulo" [(ngModel)]="base">
+            </label>
+            <label>
+                Altura
+                <input type="number" name="alturaRectangulo" [(ngModel)]="altura">
+            </label>
+        </div>
+        <div class="col-4">
+            <label>
+                <input type="radio" name="figura" value="pentagono" [(ngModel)]="figura">
+                Pentagono
+            </label>
+            <label>
+                Perimetro
+                <input type="number" name="perimetro" [(ngModel)]="perimetro">
+            </label>
+            <label>
+                Apotema
+                <input type="number" name="apotema" [(ngModel)]="apotema">
+            </label>
+        </div>
+        <button type="button" (click)="calcularArea()">
+            Calcular area
+        </button>
+    </form>
+    <div class="col-6">
+        <h2>
+            Resultado: {{ resultado }}
+        </h2>
+    </div>
+</section>

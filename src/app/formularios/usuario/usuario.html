@@ -1,0 +1,29 @@
+<section>
+    <form>
+        <fieldset>
+            <legend>
+                Inicio de Sesion
+            </legend>
+        </fieldset>
+        <fieldset>
+            <label>
+                <input type="text" [(ngModel)]="usuario" name="usuario">
+                Usuario
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>
+                <input type="password" [(ngModel)]="contrasena" name="contrasena">
+                Contrasena
+            </label>
+        </fieldset>
+        <fieldset>
+            <button type="button" (click)="iniciarSesion()">
+                Iniciar sesion
+            </button>
+        </fieldset>
+        <fieldset>
+            <p>{{ mensaje }}</p>
+        </fieldset>
+    </form>
+</section>
